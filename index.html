@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="public\logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="My Portfolio website" />
+    <meta name="keywords" content="web design, html, css, js" />
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="header__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="/public/kalyani_yewale_resume.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+        <button aria-label="mobile nav button" class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="mobile-nav__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="./public/kalyani_yewale_resume.pdf" target="_blank">Resume</a>
+            
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
+    <main>
+      <section class="hero container">
+        <img class="hero__img" src="/src/kalyani passport 34kb.jpg" alt="Profile picture" />
+        <h2 class="hero__subtitle">Hi,  I'm <B>Kalyani</B> 👋</h2>
+        <h1 class="hero__title">
+          Software <br />
+          Developer.
+        </h1>
+        <p class="hero__description">
+          A passionate <strong>Fullstack</strong> web
+          developer and <strong>JAVA</strong>
+          enthusiast specialized in building stunning pixel-perfect interactive
+          websites/applications.
+        </p>
+        <a class="hero__btn btn" href="#">Reach out</a>
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">
+            Hello there!  I'm Kalyani, a collaborative and creative
+            <strong>Fullstack</strong> web developer. I am a <strong>computer science</strong> graduate from SPPU University. My educational background, combined with my personal projects, has equipped me with a solid foundation in programming and problem-solving.
+          </p>
+          <p class="about__description">
+             I'm experienced in HTML, CSS, JavaScript, and various front-end frameworks. I develop dynamic and responsive interfaces that provide an optimal user experience. I am eager to begin my professional journey as a Software Developer with a reputed firm.
+          </p>
+          <p class="about__description">
+            I enjoy sketching and painting, as they allow me to express ideas visually and focus on the finer details, which has helped me develop patience. I got "A" grade in Elementary and Intermediate grade exam for Drawing. I also love singing, which has taught me about rhythm and discipline
+            
+          </p>
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">Languages</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">C++</li>
+              <li class="about__list">Core Java</li>
+              <li class="about__list">Advanced Java</li>
+              <li class="about__list">Data Structures</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">JavaScript</li>
+              <li class="about__list">HTML</li>
+              <li class="about__list">CSS</li>
+              
+            </ul>
+          </div>
+          <h3 class="about__subtitle">Frameworks and Libraries</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">React</li>
+              <li class="about__list">Tailwind</li>
+              
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">Bootstrap</li>
+              <li class="about__list">jQuery</li>
+              
+            </ul>
+          </div>
+          <h3 class="about__subtitle">Databases</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">MySQL</li>
+              
+            </ul>
+            <ul class="about__ul">
+              
+              
+            </ul>
+          </div>
+          <h3 class="about__subtitle">OS</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">Windows</li>
+              
+            </ul>
+            <ul class="about__ul">
+              
+              
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img
+            class="about__img lazy loading"
+            src="https://via.placeholder.com/720"
+            data-src="public\onecrop2.jpg" 
+            alt="Profile picture"
+          />
+        </div>
+      </section>
+
+      <br><br><br><br>
+      <hr class="about__hr" />
+      <section id="featured" class="featured container section">
+        <h3 class="featured__subtitle">Experience</h3>
+        <div class="featured__wrapper">
+          <h2 class="featured__title">Internship</h2>
+          <a
+            aria-label="link featured projects"
+            class="featured__link"
+            href="#"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+              />
+            </svg>
+          </a>
+        </div>
+        <p class="featured__description">
+          Web Development Intern <br>
+          At Sumago Infotech Pvt. Ltd. <br>
+          Nashik, Maharashtra.
+          
+        </p>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">Tech stack</h3>
+            <ul class="featured__tech-stack">
+              <li class="featured__info">HTML</li>
+              <li class="featured__info">CSS</li>
+              <li class="featured__info">JavaScript</li>
+              <li class="featured__info">Bootstrap</li>
+              <li class="featured__info">Java</li>
+              <li class="featured__info">MySQL</li>
+              
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">Type</h3>
+            <p class="featured__info">Fullstack Web Development</p>
+          </div>
+          <div>
+            <h3 class="featured__label">Timeline</h3>
+            <p class="featured__info">Jan-23 to Feb-23 (2 mos)</p>
+          </div>
+        </div>
+        <!-- <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x968"
+              data-src="public\10.jpg"
+              alt="hero"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x968"
+              data-src="public\10.jpg"
+              alt="courses"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x968"
+              data-src="public\10.jpg"
+              alt="pricing"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x968"
+              data-src="public\10.jpg"
+              alt="features"
+            />
+          </div>
+          
+           -->
+          
+          
+        </div>
+      </section>
+      <br><br><br>
+      <hr class="about__hr" />
+      <section class="work container section">
+        <h2 class="work__title">Projects</h2>
+        <p class="work__description">
+          <br>
+          <br>
+        </p>
+        <div class="work__container">
+          <!-- Project 1 -->
+
+          <h3 class="work__project-title">Fake Product Identification and Verification using Blockchain</h3>
+          <div class="work__img-wrapper work__image1">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="public\homepage.PNG"
+              alt="Platform Pro website"
+            />
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">Fake Product Identification and Verification using Blockchain</h3>
+            <p class="work__project-description1">
+              Fake items are causing a significant impact on the organization and the client's wellbeing. India and different nations are battling such a fake items.
+            </p>
+            <p class="work__project-description2">
+              The system verifies QR codes utilizing Blockchain innovation. This innovation stores exchange records in blocks which are secure and difficult to access and change the data from it. By utilizing a QR code we can recognize the fake item.
+            </p>
+            <a class="btn work__project-btn" href="/public/fakeproduct.mp4" target="_blank">Website</a>
+            <a class="btn work__project-btn" href="https://github.com/kalyani-github123/BE_project" target="_blank">GitHub</a>
+          </div>
+          <br><br>
+
+          
+          <!-- Project 2 -->
+          <h3 class="work__project-title">Password Generator</h3>
+          <div class="work__img-wrapper work__image2">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="public\passoutput.PNG"
+              alt="Draze Force website"
+            />
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Password Generator</h3>
+            <p class="work__project-description1">
+              A password generator website allows users to create secure, customizable passwords based on various criteria, using modern web technologies such as React, Tailwind CSS, HTML, JavaScript and React Hooks.
+            </p>
+            <p class="work__project-description2">
+              useState to manage form state (password length, character options, generated password).useEffect to update the generated password when user selections change.Uses useCallback to memoize functions that depend on state, preventing unnecessary re-renders and improving performance.
+            </p>
+            <a class="btn work__project-btn" href="/public/passgen.mp4" target="_blank">Website</a>
+            <a class="btn work__project-btn" href="https://github.com/kalyani-github123/Password_Generator" target="_blank">GitHub</a>
+          </div>
+          <br><br>
+
+          <!-- Project 3 -->
+
+          <h3 class="work__project-title">Currency Converter</h3>
+          <div class="work__img-wrapper work__image3">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="public\curroutput.PNG"
+              alt="Wax Motif website"
+            />
+          </div>
+          <div class="work__project work__content3">
+            <h3 class="work__project-subtitle">Currency Converter</h3>
+            <p class="work__project-description1">
+              The Currency Converter website is a tool built using React as the primary framework, with Tailwind CSS for styling and responsive design. The application is designed to allow users to convert amounts between multiple currencies, leveraging real-time exchange rates.
+            </p>
+            <p class="work__project-description2">
+              By integrating various React hooks (including built-in hooks like useId, useState, and useEffect as well as custom hooks), the app provides a smooth and interactive experience with optimal code organization and reusability.
+            </p>
+            <a class="btn work__project-btn" href="/public/currconvert.mp4" target="_blank">Website</a>
+            <a class="btn work__project-btn" href="https://github.com/kalyani-github123/Currency_Converter" target="_blank">GitHub</a>
+          </div>
+          <br><br>
+          
+          <!-- Project 4 -->
+          <h3 class="work__project-title">To Do List</h3>
+          <div class="work__img-wrapper work__image4">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="public\listoutput.PNG"
+              alt="Artren website"
+            />
+          </div>
+          <div class="work__project work__content4">
+            <h3 class="work__project-subtitle">To Do List</h3>
+            <p class="work__project-description1">
+              The To-Do List website allows users to manage tasks effectively by adding, editing, and deleting tasks. This application aims to provide a simple and user-friendly interface to help users stay organized and keep track of their daily tasks.
+            </p>
+            <p class="work__project-description2">
+              Users can input a task description and add it to the to-do list. Once added, the task appears on the list with options to edit or delete. Each task includes a delete button that allows users to remove it from the list. Clicking the edit button allows users to update the task description, which is saved and displayed
+            </p>
+            <a class="btn work__project-btn" href="/public/todolist.mp4" target="_blank">Website</a>
+            <a class="btn work__project-btn" href="https://github.com/kalyani-github123/ToDoList" target="_blank">GitHub</a>
+          </div>
+          <br><br>
+
+          <!-- Project 5 -->
+          <h3 class="work__project-title">Portfolio Website</h3>
+          <div class="work__img-wrapper work__image5">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="public\portfoliooutput.PNG"
+              alt="Wallys Vegan website"
+            />
+          </div>
+          <div class="work__project work__content5">
+            <h3 class="work__project-subtitle">Portfolio Website</h3>
+            <p class="work__project-description1">
+              This project is a personal portfolio website built using React for a dynamic front end, Tailwind CSS for responsive and modern styling, and HTML/CSS/JavaScript for foundational structure and interactivity. The website serves as a professional showcase of your work, skills, and background.
+            </p>
+            <p class="work__project-description2">
+              Home gives brief introduction and professional tagline. About shows background, skills and a summary of experience. Projects showcasing various projects with images, descriptions, and links to live demos or source code. Contact with social media links to reach out. Dark/Light Mode to switch between themes for better user experience.
+            </p>
+            <a class="btn work__project-btn" href="http://localhost:5173/" target="_blank">Website</a>
+            <a class="btn work__project-btn" href="" target="_blank">GitHub</a>
+          </div>
+          <br><br>
+          <!-- Project 6 -->
+          
+        </div>
+      </section>
+      <br><br><br>
+      <hr class="about__hr" />
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Get In Contact</h2>
+        <p class="contact__description">
+         
+        </p>
+
+        <section class="contact_options">
+          <a
+          class="work__project-btn"
+          href="mailto:yewalekalyani33@gmail.com"
+          target="_blank"
+          >  
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/email.png" alt="Email Icon">       
+          
+          </a>
+        
+        <a
+        class="work__project-btn"
+          href="https://www.linkedin.com/in/kalyani-yewale-58ab65334/"
+          target="_blank"
+          ><img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn Icon">
+          </a        >
+        
+        <a
+        class="work__project-btn"
+          href="tel:+7058543429"
+          target="_blank"
+          >
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone Icon"></a
+        >
+        
+        </section>
+        
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ We can Do It ~</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
