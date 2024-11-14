@@ -1,3 +1,3 @@
-<b>Project Overview</b><br>
-This project is a personal portfolio website built using HTML, CSS for responsiveness and JavaScript for foundational structure and interactivity. The website serves as a professional showcase of your work, skills, and background.<br><br>
+<b>Project Overview</b><br><br>
+This project is a personal portfolio website built using HTML, CSS for responsiveness and JavaScript for foundational structure and interactivity. The website serves as a professional showcase of your work, skills, and background.<br>
 Home gives brief introduction and professional tagline. About shows background, skills and a summary of experience. Projects showcasing various projects with images, descriptions, and links to live demos or source code. Contact with social media links to reach out. Dark/Light Mode to switch between themes for better user experience.
