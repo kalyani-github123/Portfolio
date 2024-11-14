@@ -4,12 +4,13 @@
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  position: relative;
+  position: fixed;
   z-index: 9999;
 }
 
 .header__menu {
   display: none;
+  margin-top: -226px;
 }
 
 .header__bars {
